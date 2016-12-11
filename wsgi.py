@@ -13,11 +13,21 @@ def hello_name(user):
 def student():
    return render_template('student.html')
 
+@application.route('/omasivu')
+def omasivu():
+   return render_template('omasivu.html')
+
 @application.route('/result',methods = ['POST', 'GET'])
 def result():
    if request.method == 'POST':
       result = request.form
       return render_template("result.html",result = result)
+
+@application.route('/tulos',methods = ['POST', 'GET'])
+def tulosta():
+   if request.method == 'POST':
+      apu = request.form
+      return render_template("tulos.html",tulos = apu)
 
 if __name__ == "__main__":
     application.run()
