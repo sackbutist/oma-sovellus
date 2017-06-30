@@ -27,7 +27,7 @@ def result():
 def tulosta():
    if request.method == 'POST':
       apu = request.form
-      return render_template("tulos.html",tulos = apu)
+      return render_template("ulos.html",tulos = apu)
 
 if __name__ == "__main__":
     application.run()
