@@ -15,7 +15,7 @@ def student():
 
 @application.route('/omasivu')
 def omasivu():
-   return render_template('omasivu.html')
+   return render_template('student.html')
 
 @application.route('/result',methods = ['POST', 'GET'])
 def result():
