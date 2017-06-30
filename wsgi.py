@@ -24,7 +24,7 @@ def result():
       return render_template("result.html",result = result)
 
 @application.route('/tulos',methods = ['POST', 'GET'])
-def tulosta():
+def tulos():
    if request.method == 'POST':
       apu = request.form
       return render_template("tulos.html",tulos = apu)
